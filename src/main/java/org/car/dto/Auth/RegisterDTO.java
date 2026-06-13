@@ -8,12 +8,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RegisterDTO {
-    private String Id;
+    private Long id;
     private String username;
     private String email;
     private String password;
     private String address;
-    private int phoneNumber;
-    private boolean isActive;
+    private Long phoneNumber;
+    private Boolean active;
 
 }
