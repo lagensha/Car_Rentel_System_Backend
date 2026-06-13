@@ -1,5 +1,6 @@
 package org.car.dto.Auth;
 
+
 public class RegisterDTO {
     private String Id;
     private String username;
