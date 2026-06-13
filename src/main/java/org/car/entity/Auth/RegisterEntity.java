@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class RegisterEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String Id;
+    private Long Id;
     private String username;
     private String email;
     private String password;
