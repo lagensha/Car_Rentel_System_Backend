@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.car.dto.Auth.RegisterDTO;
 import org.car.service.impl.RegisterServiceImpl;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,7 +16,7 @@ public class RegisterController{
     final RegisterServiceImpl registerService;
 
     @PostMapping("/register")
-    public void addCustomer(RegisterDTO registerDTO) {
+    public void addCustomer(@RequestBody RegisterDTO registerDTO) {
         registerService.addCustomer(registerDTO);
     }
 
