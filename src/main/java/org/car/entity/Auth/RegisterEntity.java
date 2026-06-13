@@ -15,11 +15,11 @@ import lombok.NoArgsConstructor;
 public class RegisterEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
     private String username;
     private String email;
     private String password;
     private String address;
-    private int phoneNumber;
-    private boolean isActive;
+    private Long phoneNumber;
+    private Boolean active;
 }
