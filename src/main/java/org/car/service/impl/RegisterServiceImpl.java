@@ -2,12 +2,17 @@ package org.car.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.car.dto.Auth.RegisterDTO;
+import org.car.repository.RegisterRepository;
 import org.car.service.RegisterService;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.ModelMap;
 
 @RequiredArgsConstructor
 @Service
 public class RegisterServiceImpl implements RegisterService {
+    final RegisterRepository registerRepository;
+    final ModelMap modelMap;
+
     @Override
     public void addCustomer(RegisterDTO registerDTO) {
 
