@@ -35,7 +35,11 @@ public class RegisterServiceImpl implements RegisterService {
 
     @Override
     public boolean isCustomerActive(Long id) {
-        return false;
+        RegisterEntity registerEntity = registerRepository.findById(id).orElse(null);
+        boolean newStatus=!registerEntity.active;
+        registerEntity.setActive(newStatus);
+        registerRepository.save(registerEntity);
+        return newStatus;
     }
 
     @Override
