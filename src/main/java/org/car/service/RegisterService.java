@@ -5,6 +5,6 @@ import org.car.dto.Auth.RegisterDTO;
 public interface RegisterService {
     void addCustomer(RegisterDTO registerDTO);
     void updateCustomer(RegisterDTO registerDTO);
-    void deleteCustomer(String id);
-    boolean isCustomerActive(String id);
+    void deleteCustomer(Long id);
+    boolean isCustomerActive(Long id);
 }
