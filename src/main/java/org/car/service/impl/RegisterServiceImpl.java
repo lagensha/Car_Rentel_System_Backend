@@ -8,6 +8,8 @@ import org.car.service.RegisterService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @Service
 public class RegisterServiceImpl implements RegisterService {
@@ -34,5 +36,15 @@ public class RegisterServiceImpl implements RegisterService {
     @Override
     public boolean isCustomerActive(Long id) {
         return false;
+    }
+
+    @Override
+    public RegisterDTO searchByID(Long id) {
+        return null;
+    }
+
+    @Override
+    public List<RegisterDTO> getAll() {
+        return List.of();
     }
 }
