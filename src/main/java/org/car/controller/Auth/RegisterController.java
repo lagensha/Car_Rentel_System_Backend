@@ -5,6 +5,8 @@ import org.car.dto.Auth.RegisterDTO;
 import org.car.service.impl.RegisterServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1/auth")
@@ -22,13 +24,21 @@ public class RegisterController{
         registerService.updateCustomer(registerDTO);
     }
 
+    @DeleteMapping("/delete/{id}")
+    public void deleteCustomer(@PathVariable Long id) {
+        registerService.deleteCustomer(id);
+    }
 
-    public void deleteCustomer(String id) {
+    public boolean isCustomerActive(Long id) {
+        return false;
+    }
 
+    public RegisterDTO searchByID(Long id) {
+        return null;
     }
 
 
-    public boolean isCustomerActive(String id) {
-        return false;
+    public List<RegisterDTO> getAll() {
+        return List.of();
     }
 }
