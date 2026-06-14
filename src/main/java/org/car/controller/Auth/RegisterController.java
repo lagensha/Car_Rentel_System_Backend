@@ -3,10 +3,7 @@ package org.car.controller.Auth;
 import lombok.RequiredArgsConstructor;
 import org.car.dto.Auth.RegisterDTO;
 import org.car.service.impl.RegisterServiceImpl;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
 @RestController
@@ -20,9 +17,9 @@ public class RegisterController{
         registerService.addCustomer(registerDTO);
     }
 
-
-    public void updateCustomer(RegisterDTO registerDTO) {
-
+    @GetMapping("/Update")
+    public void updateCustomer(@RequestBody RegisterDTO registerDTO) {
+        registerService.updateCustomer(registerDTO);
     }
 
 
