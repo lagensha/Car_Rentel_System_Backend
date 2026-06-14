@@ -11,4 +11,5 @@ public interface RegisterService {
     boolean isCustomerActive(Long id);
     RegisterDTO searchByID(Long id);
     List<RegisterDTO> getAll();
+   boolean setStatus(Long id, boolean status);
 }
