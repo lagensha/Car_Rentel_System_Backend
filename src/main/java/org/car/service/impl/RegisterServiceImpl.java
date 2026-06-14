@@ -27,12 +27,12 @@ public class RegisterServiceImpl implements RegisterService {
     }
 
     @Override
-    public void deleteCustomer(String id) {
-
+    public void deleteCustomer(Long id) {
+        registerRepository.deleteById(id);
     }
 
     @Override
-    public boolean isCustomerActive(String id) {
+    public boolean isCustomerActive(Long id) {
         return false;
     }
 }
