@@ -42,10 +42,16 @@ public class RegisterController{
     public List<RegisterDTO> getAll() {
         return List.of();
     }
+
     @PutMapping("{id}/toggle-status")
     public ResponseEntity<String> toggleStatus(@PathVariable Long id) {
         boolean isActive=registerService.isCustomerActive(id);
         String message=isActive ? "Customer with ID "+id+" has been deactivated." : "Customer with ID "+id+" has been activated.";
         return ResponseEntity.ok(message);
+    }
+    @PutMapping("{id}/activate")
+    public ResponseEntity<String> activate(@PathVariable Long id) {
+        registerService.setStatus(id,true);
+        return ResponseEntity.ok("Customer with ID "+id+" has been activated.");
     }
 }
