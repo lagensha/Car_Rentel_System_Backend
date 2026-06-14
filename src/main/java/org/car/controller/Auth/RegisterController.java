@@ -19,7 +19,7 @@ public class RegisterController{
         registerService.addCustomer(registerDTO);
     }
 
-    @GetMapping("/Update")
+    @PutMapping("/Update")
     public void updateCustomer(@RequestBody RegisterDTO registerDTO) {
         registerService.updateCustomer(registerDTO);
     }
