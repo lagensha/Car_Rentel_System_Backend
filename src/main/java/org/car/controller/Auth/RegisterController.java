@@ -54,4 +54,10 @@ public class RegisterController{
         registerService.setStatus(id,true);
         return ResponseEntity.ok("Customer with ID "+id+" has been activated.");
     }
+
+    @PutMapping("{id}/deactivate")
+    public ResponseEntity<String> disable(@PathVariable Long id) {
+        registerService.setStatus(id,false);
+        return ResponseEntity.ok("Customer with ID "+id+" has been deactivated.");
+    }
 }
