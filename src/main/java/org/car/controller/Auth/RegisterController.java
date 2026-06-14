@@ -3,6 +3,7 @@ package org.car.controller.Auth;
 import lombok.RequiredArgsConstructor;
 import org.car.dto.Auth.RegisterDTO;
 import org.car.service.impl.RegisterServiceImpl;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,5 +41,11 @@ public class RegisterController{
 
     public List<RegisterDTO> getAll() {
         return List.of();
+    }
+    @PutMapping("{id}/toggle-status")
+    public ResponseEntity<String> toggleStatus(@PathVariable Long id) {
+        boolean isActive=registerService.isCustomerActive(id);
+        String message=isActive ? "Customer with ID "+id+" has been deactivated." : "Customer with ID "+id+" has been activated.";
+        return ResponseEntity.ok(message);
     }
 }
