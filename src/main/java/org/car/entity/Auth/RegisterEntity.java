@@ -21,5 +21,5 @@ public class RegisterEntity {
     private String password;
     private String address;
     private Long phoneNumber;
-    private Boolean active;
+    public Boolean active=true;
 }
