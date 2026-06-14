@@ -14,6 +14,6 @@ public class RegisterDTO {
     private String password;
     private String address;
     private Long phoneNumber;
-    private Boolean active;
+    private Boolean active=true;
 
 }
