@@ -22,7 +22,8 @@ public class RegisterServiceImpl implements RegisterService {
 
     @Override
     public void updateCustomer(RegisterDTO registerDTO) {
-
+        RegisterEntity registerEntity=modelMapper.map(registerDTO,RegisterEntity.class);
+        registerRepository.save(registerEntity);
     }
 
     @Override
