@@ -41,7 +41,13 @@ public class RegisterServiceImpl implements RegisterService {
         registerRepository.save(registerEntity);
         return newStatus;
     }
-
+    @Override
+    public boolean setStatus(Long id, boolean status) {
+       RegisterEntity registerEntity = registerRepository.findById(id).orElseThrow(()->new RuntimeException("Customer not found"+id));
+         registerEntity.setActive(status);
+            registerRepository.save(registerEntity);
+            return registerEntity.active;
+    }
     @Override
     public RegisterDTO searchByID(Long id) {
         return null;
