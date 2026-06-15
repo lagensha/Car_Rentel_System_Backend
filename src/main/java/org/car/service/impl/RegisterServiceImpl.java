@@ -35,7 +35,7 @@ public class RegisterServiceImpl implements RegisterService {
 
     @Override
     public boolean isCustomerActive(Long id) {
-        RegisterEntity registerEntity = registerRepository.findById(id).orElse(null);
+        RegisterEntity registerEntity = registerRepository.findById(id).orElseThrow(()->new RuntimeException("Customer not found"+id));
         boolean newStatus=!registerEntity.active;
         registerEntity.setActive(newStatus);
         registerRepository.save(registerEntity);
@@ -50,7 +50,9 @@ public class RegisterServiceImpl implements RegisterService {
     }
     @Override
     public RegisterDTO searchByID(Long id) {
-        return null;
+       RegisterEntity registerEntity=registerRepository.findById(id).get();
+         RegisterDTO registerDTO=modelMapper.map(registerEntity,RegisterDTO.class);
+        return registerDTO;
     }
 
     @Override
