@@ -30,13 +30,13 @@ public class RegisterController{
         registerService.deleteCustomer(id);
     }
     @GetMapping("/search/{id}")
-    public RegisterDTO searchByID(Long id) {
+    public RegisterDTO searchByID(@PathVariable Long id) {
         return registerService.searchByID(id);
     }
 
-
+@GetMapping("/getAll")
     public List<RegisterDTO> getAll() {
-        return List.of();
+        return registerService.getAll();
     }
 
     @PutMapping("{id}/toggle-status")
