@@ -25,7 +25,6 @@ public class AdminController {
         adminService.logout(id);
     }
 
-
     public boolean isAdminActive(Long id) {
         return false;
     }
