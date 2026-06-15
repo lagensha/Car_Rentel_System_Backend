@@ -8,6 +8,7 @@ import org.car.service.RegisterService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -57,6 +58,12 @@ public class RegisterServiceImpl implements RegisterService {
 
     @Override
     public List<RegisterDTO> getAll() {
-        return List.of();
+       List<RegisterEntity>registerEntities=registerRepository.findAll();
+        ArrayList<RegisterDTO>registerDTOS=new ArrayList<>();
+        registerEntities.forEach(registerEntity -> {
+            RegisterDTO registerDTO=modelMapper.map(registerEntity,RegisterDTO.class);
+            registerDTOS.add(registerDTO);
+        });
+        return registerDTOS;
     }
 }
