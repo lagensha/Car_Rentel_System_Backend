@@ -22,7 +22,7 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public void logout(Long id) {
-        return;
+        adminRepository.deleteById(id);
     }
 
     @Override
