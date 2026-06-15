@@ -2,6 +2,7 @@ package org.car.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.car.dto.AdminDTO;
+import org.car.entity.AdminEntity;
 import org.car.repository.AdminRepository;
 import org.car.service.AdminService;
 import org.modelmapper.ModelMapper;
@@ -14,13 +15,14 @@ public class AdminServiceImpl implements AdminService {
     final ModelMapper modelMapper;
 
     @Override
-    public boolean login(AdminDTO adminDTO) {
-        return false;
+    public void login(AdminDTO adminDTO) {
+        AdminEntity adminEntity =modelMapper.map(adminDTO,AdminEntity.class);
+        adminRepository.save(adminEntity);
     }
 
     @Override
-    public boolean logout(Long id) {
-        return false;
+    public void logout(Long id) {
+        return;
     }
 
     @Override
