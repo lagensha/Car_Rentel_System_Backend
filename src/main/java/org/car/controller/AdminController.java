@@ -28,5 +28,9 @@ public class AdminController {
             String status=active ? "Admin with ID "+id+" has been deactivated." : "Admin with ID "+id+" has been activated.";
             return ResponseEntity.ok(status);
     }
-
+@PutMapping("/activate/{id}")
+    public ResponseEntity<String> activateAdmin(@PathVariable Long id) {
+        adminService.setAdminStatus(id,true);
+        return ResponseEntity.ok("Admin with ID "+id+" has been activated.");
+    }
 }
