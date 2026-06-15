@@ -8,4 +8,5 @@ public interface AdminService {
         void login(AdminDTO adminDTO);
         void logout(Long id);
         boolean isAdminActive(Long id);
+    boolean setAdminStatus(Long id, boolean status);
 }
