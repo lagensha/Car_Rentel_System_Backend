@@ -1,8 +1,13 @@
 package org.car.service;
 
+import java.awt.image.VolatileImage;
+
 public interface AdminService {
-    void AddCar();
-        void UpdateCar();
-        void DeleteCar();
-        void ViewCar();
+    void addCar();
+        void updateCar();
+        void deleteCar();
+        void viewCar();
+        Boolean isCarAvailable();
+        void viewCustomer();
+
 }
