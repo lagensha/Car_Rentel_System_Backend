@@ -11,6 +11,7 @@ public class AdminDTO {
     private Long id;
     private String name;
     private String email;
+    private String password;
     private boolean isActive;
 
 }
