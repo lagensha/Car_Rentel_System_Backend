@@ -27,6 +27,10 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public boolean isAdminActive(Long id) {
-        return false;
+      AdminEntity adminEntity = adminRepository.findById(id).orElseThrow(()->new RuntimeException("Admin not found"));
+      adminEntity.setActive(true);
+        adminRepository.save(adminEntity);
+        return adminEntity.isActive();
     }
+
 }
