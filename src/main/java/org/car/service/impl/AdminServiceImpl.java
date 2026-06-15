@@ -3,6 +3,7 @@ package org.car.service.impl;
 import lombok.RequiredArgsConstructor;
 import org.car.dto.AdminDTO;
 import org.car.entity.AdminEntity;
+import org.car.entity.Auth.RegisterEntity;
 import org.car.repository.AdminRepository;
 import org.car.service.AdminService;
 import org.modelmapper.ModelMapper;
@@ -32,5 +33,10 @@ public class AdminServiceImpl implements AdminService {
         adminRepository.save(adminEntity);
         return adminEntity.isActive();
     }
-
+  public boolean setAdminStatus(Long id, boolean status){
+     AdminEntity adminEntity = adminRepository.findById(id).orElseThrow(()->new RuntimeException(id+"Admin not found"));
+      adminEntity.setActive(status);
+        adminRepository.save(adminEntity);
+        return adminEntity.isActive();
+  }
 }
