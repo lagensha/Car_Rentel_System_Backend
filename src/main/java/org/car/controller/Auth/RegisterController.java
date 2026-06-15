@@ -29,13 +29,9 @@ public class RegisterController{
     public void deleteCustomer(@PathVariable Long id) {
         registerService.deleteCustomer(id);
     }
-
-    public boolean isCustomerActive(Long id) {
-        return false;
-    }
-
+    @GetMapping("/search/{id}")
     public RegisterDTO searchByID(Long id) {
-        return null;
+        return registerService.searchByID(id);
     }
 
 
