@@ -1,13 +1,11 @@
 package org.car.service;
 
+import org.car.dto.AdminDTO;
+
 import java.awt.image.VolatileImage;
 
 public interface AdminService {
-    void addCar();
-        void updateCar();
-        void deleteCar();
-        void viewCar();
-        Boolean isCarAvailable();
-        void viewCustomer();
-
+        boolean login(AdminDTO adminDTO);
+        boolean logout(Long id);
+        boolean isAdminActive(Long id);
 }
