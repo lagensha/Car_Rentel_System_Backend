@@ -33,4 +33,9 @@ public class AdminController {
         adminService.setAdminStatus(id,true);
         return ResponseEntity.ok("Admin with ID "+id+" has been activated.");
     }
+    @PutMapping("/deactivate/{id}")
+    public ResponseEntity<String> deactivateAdmin(@PathVariable Long id) {
+        adminService.setAdminStatus(id,false);
+        return ResponseEntity.ok("Admin with ID "+id+" has been deactivated.");
+    }
 }
