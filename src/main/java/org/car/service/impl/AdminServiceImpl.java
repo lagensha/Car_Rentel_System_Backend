@@ -39,4 +39,5 @@ public class AdminServiceImpl implements AdminService {
         adminRepository.save(adminEntity);
         return adminEntity.isActive();
   }
+
 }
