@@ -16,7 +16,7 @@ public class AdminController {
     final AdminService adminService;
 @PostMapping("/login")
     public void login(AdminDTO adminDTO) {
-
+        adminService.login(adminDTO);
     }
 
 
