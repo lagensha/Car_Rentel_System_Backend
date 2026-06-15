@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AdminEntity {
-    private String id;
+    private Long id;
     private String name;
     private String email;
     private String phoneNumber;
