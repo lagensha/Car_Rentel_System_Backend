@@ -17,6 +17,5 @@ public class AdminEntity {
     private Long id;
     private String name;
     private String email;
-    private String phoneNumber;
     private boolean isActive;
 }
