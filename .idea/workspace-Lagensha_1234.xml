@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2744f41e-e6a2-4f10-92cf-2adf83cde5f3" name="Changes" comment="Add CarEntity class for representing car data in the application">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/car/repository/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/car/service/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/car/service/impl/CarServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/lagen/OneDrive/Desktop/ICET119/springboot/Car_Rentel_System_Backend" value="3Eyju9v23PCXC9wqbDqGIq9hXBf" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lagensha&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lagensha/Car_Rentel_System_Backend.git&quot;,
+    &quot;accountId&quot;: &quot;686fdc39-dccd-452a-b2ca-7d0d31c54e54&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3Eyju9v23PCXC9wqbDqGIq9hXBf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lagen/OneDrive/Desktop/ICET119/springboot/Car_Rentel_System_Backend/src/main/java/org/car/service&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lagen\OneDrive\Desktop\ICET119\springboot\Car_Rentel_System_Backend\src\main\java\org\car\service" />
+      <recent name="C:\Users\lagen\OneDrive\Desktop\ICET119\springboot\Car_Rentel_System_Backend\src\main\java\org\car\entity" />
+      <recent name="C:\Users\lagen\OneDrive\Desktop\ICET119\springboot\Car_Rentel_System_Backend\src\main\java\org\car\dto" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.car.Main" />
+      <module name="Car_Rentel_System_Backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.car.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2744f41e-e6a2-4f10-92cf-2adf83cde5f3" name="Changes" comment="" />
+      <created>1781157928754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781157928754</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Toggle customer active status in isCustomerActive method">
+      <option name="closed" value="true" />
+      <created>1781445602990</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1781445602990</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Add toggleStatus endpoint to RegisterController for customer activation">
+      <option name="closed" value="true" />
+      <created>1781445954665</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1781445954665</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Add toggleStatus endpoint to RegisterController for customer activation">
+      <option name="closed" value="true" />
+      <created>1781445970413</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1781445970413</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Add setStatus method to RegisterServiceImpl for updating customer active status">
+      <option name="closed" value="true" />
+      <created>1781445982080</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1781445982082</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Add activate endpoint to RegisterController for customer activation">
+      <option name="closed" value="true" />
+      <created>1781446117065</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1781446117065</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Add deactivate endpoint to RegisterController for customer deactivation">
+      <option name="closed" value="true" />
+      <created>1781446268474</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1781446268474</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Improve error handling in RegisterServiceImpl and implement searchByID method">
+      <option name="closed" value="true" />
+      <created>1781505256244</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1781505256244</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Implement searchByID endpoint in RegisterController and remove unused isCustomerActive method">
+      <option name="closed" value="true" />
+      <created>1781505466834</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1781505466834</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Implement getAll method in RegisterServiceImpl to retrieve all register entries">
+      <option name="closed" value="true" />
+      <created>1781505646211</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1781505646211</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Fix searchByID method to use @PathVariable and implement getAll endpoint in RegisterController">
+      <option name="closed" value="true" />
+      <created>1781505867346</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1781505867346</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Refactor AdminService interface methods to follow Java naming conventions and add new methods for car availability and customer viewing">
+      <option name="closed" value="true" />
+      <created>1781506394061</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1781506394061</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Implement AdminService interface in AdminServiceImpl and add methods for car management and customer viewing">
+      <option name="closed" value="true" />
+      <created>1781506447132</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1781506447132</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Add AdminRepository and ModelMapper dependencies to AdminServiceImpl">
+      <option name="closed" value="true" />
+      <created>1781506512083</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1781506512083</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Change id field type in AdminDTO from String to Long">
+      <option name="closed" value="true" />
+      <created>1781506581011</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1781506581011</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Change id field type in AdminEntity from String to Long">
+      <option name="closed" value="true" />
+      <created>1781506595956</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1781506595956</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Extend AdminRepository to inherit from JpaRepository for improved data access">
+      <option name="closed" value="true" />
+      <created>1781506612265</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1781506612265</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Add @Entity annotation to AdminEntity for JPA mapping">
+      <option name="closed" value="true" />
+      <created>1781506646062</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1781506646062</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Add @Id and @GeneratedValue annotations to id field in AdminEntity">
+      <option name="closed" value="true" />
+      <created>1781506702602</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1781506702602</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Refactor AdminService interface to include login, logout, and isAdminActive methods">
+      <option name="closed" value="true" />
+      <created>1781507690983</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1781507690983</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Implement login, logout, and isAdminActive methods in AdminServiceImpl">
+      <option name="closed" value="true" />
+      <created>1781507710688</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1781507710688</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Add Lombok annotations to AdminDTO for boilerplate reduction">
+      <option name="closed" value="true" />
+      <created>1781507843354</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1781507843354</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Fix AdminRepository to use AdminEntity for JPA repository mapping">
+      <option name="closed" value="true" />
+      <created>1781509665286</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1781509665291</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Change login and logout methods in AdminService to void return type">
+      <option name="closed" value="true" />
+      <created>1781509723116</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1781509723116</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Change login and logout methods in AdminServiceImpl to void return type and implement login functionality">
+      <option name="closed" value="true" />
+      <created>1781509735360</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1781509735360</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Remove phoneNumber field from AdminDTO">
+      <option name="closed" value="true" />
+      <created>1781510051173</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510051173</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Remove phoneNumber field from AdminEntity">
+      <option name="closed" value="true" />
+      <created>1781510063760</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510063760</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Implement login and logout methods in AdminController and add isAdminActive method">
+      <option name="closed" value="true" />
+      <created>1781510186686</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510186686</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Add RestController annotation and request mapping to AdminController">
+      <option name="closed" value="true" />
+      <created>1781510203313</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510203313</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Add AdminService dependency to AdminController">
+      <option name="closed" value="true" />
+      <created>1781510234752</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510234752</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Fix formatting in AdminController class">
+      <option name="closed" value="true" />
+      <created>1781510259909</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510259909</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Add login endpoint to AdminController">
+      <option name="closed" value="true" />
+      <created>1781510287588</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510287588</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Implement login logic in AdminController">
+      <option name="closed" value="true" />
+      <created>1781510302212</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510302212</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Add password field to AdminEntity">
+      <option name="closed" value="true" />
+      <created>1781510404191</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510404191</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Add password field to AdminDTO">
+      <option name="closed" value="true" />
+      <created>1781510429457</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510429457</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Implement logout functionality in AdminServiceImpl">
+      <option name="closed" value="true" />
+      <created>1781510723351</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510723351</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Implement logout endpoint in AdminController">
+      <option name="closed" value="true" />
+      <created>1781510764027</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510764027</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Remove unnecessary blank line in AdminController">
+      <option name="closed" value="true" />
+      <created>1781510902999</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1781510902999</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Activate admin in isAdminActive method in AdminServiceImpl">
+      <option name="closed" value="true" />
+      <created>1781511093690</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1781511093692</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Add setAdminStatus method to AdminServiceImpl for updating admin activity">
+      <option name="closed" value="true" />
+      <created>1781511335249</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1781511335249</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Add toggleAdminStatus method to AdminController for activating/deactivating admins">
+      <option name="closed" value="true" />
+      <created>1781511583638</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1781511583638</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Fix formatting issue by removing unnecessary blank line in AdminServiceImpl">
+      <option name="closed" value="true" />
+      <created>1781511595901</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1781511595901</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Refactor AdminController to use annotations for request mapping and improve method signatures">
+      <option name="closed" value="true" />
+      <created>1781511692132</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1781511692132</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Add activateAdmin method to AdminController for activating admins">
+      <option name="closed" value="true" />
+      <created>1781512011170</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1781512011170</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Add setAdminStatus method to AdminService for updating admin activity">
+      <option name="closed" value="true" />
+      <created>1781512022077</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1781512022077</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Add setAdminStatus method to AdminServiceImpl for updating admin activity status">
+      <option name="closed" value="true" />
+      <created>1781512033600</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1781512033600</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Add deactivateAdmin method to AdminController for deactivating admins">
+      <option name="closed" value="true" />
+      <created>1781512066992</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1781512066992</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Add CarController class for managing car-related operations">
+      <option name="closed" value="true" />
+      <created>1781512595370</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1781512595370</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Add CarDTO class for transferring car data">
+      <option name="closed" value="true" />
+      <created>1782565853921</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1782565853923</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Add CarEntity class for representing car data in the application">
+      <option name="closed" value="true" />
+      <created>1782565872017</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1782565872017</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove phoneNumber field from AdminDTO" />
+    <MESSAGE value="Remove phoneNumber field from AdminEntity" />
+    <MESSAGE value="Implement login and logout methods in AdminController and add isAdminActive method" />
+    <MESSAGE value="Add RestController annotation and request mapping to AdminController" />
+    <MESSAGE value="Add AdminService dependency to AdminController" />
+    <MESSAGE value="Fix formatting in AdminController class" />
+    <MESSAGE value="Add login endpoint to AdminController" />
+    <MESSAGE value="Implement login logic in AdminController" />
+    <MESSAGE value="Add password field to AdminEntity" />
+    <MESSAGE value="Add password field to AdminDTO" />
+    <MESSAGE value="Implement logout functionality in AdminServiceImpl" />
+    <MESSAGE value="Implement logout endpoint in AdminController" />
+    <MESSAGE value="Remove unnecessary blank line in AdminController" />
+    <MESSAGE value="Activate admin in isAdminActive method in AdminServiceImpl" />
+    <MESSAGE value="Add setAdminStatus method to AdminServiceImpl for updating admin activity" />
+    <MESSAGE value="Add toggleAdminStatus method to AdminController for activating/deactivating admins" />
+    <MESSAGE value="Fix formatting issue by removing unnecessary blank line in AdminServiceImpl" />
+    <MESSAGE value="Refactor AdminController to use annotations for request mapping and improve method signatures" />
+    <MESSAGE value="Add activateAdmin method to AdminController for activating admins" />
+    <MESSAGE value="Add setAdminStatus method to AdminService for updating admin activity" />
+    <MESSAGE value="Add setAdminStatus method to AdminServiceImpl for updating admin activity status" />
+    <MESSAGE value="Add deactivateAdmin method to AdminController for deactivating admins" />
+    <MESSAGE value="Add CarController class for managing car-related operations" />
+    <MESSAGE value="Add CarDTO class for transferring car data" />
+    <MESSAGE value="Add CarEntity class for representing car data in the application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CarEntity class for representing car data in the application" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
