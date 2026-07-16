@@ -2,7 +2,9 @@ package org.car.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.car.dto.Auth.RegisterDTO;
+import org.car.repository.CarRepository;
 import org.car.service.CarService;
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,6 +12,9 @@ import java.util.List;
 @RequiredArgsConstructor
 @Service
 public class CarServiceImpl implements CarService {
+
+    final  CarRepository carRepository;
+    final ModelMapper modelMapper;
 
     @Override
     public void addCar(RegisterDTO registerDTO) {
