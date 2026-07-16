@@ -2,6 +2,8 @@ package org.car.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.car.dto.Auth.RegisterDTO;
+import org.car.dto.CarDTO;
+import org.car.entity.CarEntity;
 import org.car.repository.CarRepository;
 import org.car.service.CarService;
 import org.modelmapper.ModelMapper;
@@ -17,12 +19,12 @@ public class CarServiceImpl implements CarService {
     final ModelMapper modelMapper;
 
     @Override
-    public void addCar(RegisterDTO registerDTO) {
-
+    public void addCar(CarDTO carDTO) {
+        CarEntity carEntity=modelMapper.map(Car)
     }
 
     @Override
-    public void updateCar(RegisterDTO registerDTO) {
+    public void updateCar(CarDTO carDTO) {
 
     }
 
@@ -37,12 +39,12 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public RegisterDTO searchByID(Long id) {
+    public CarDTO searchByID(Long id) {
         return null;
     }
 
     @Override
-    public List<RegisterDTO> getAll() {
+    public List<CarDTO> getAll() {
         return List.of();
     }
 
