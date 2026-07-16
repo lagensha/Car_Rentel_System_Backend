@@ -1,7 +1,6 @@
 package org.car.service.impl;
 
 import lombok.RequiredArgsConstructor;
-import org.car.dto.Auth.RegisterDTO;
 import org.car.dto.CarDTO;
 import org.car.entity.CarEntity;
 import org.car.repository.CarRepository;
