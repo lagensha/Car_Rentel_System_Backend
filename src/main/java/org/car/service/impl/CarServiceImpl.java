@@ -20,7 +20,7 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public void addCar(CarDTO carDTO) {
-        CarEntity carEntity=modelMapper.map(Car)
+        CarEntity carEntity=modelMapper.map(carDTO,CarEntity.class);
     }
 
     @Override
