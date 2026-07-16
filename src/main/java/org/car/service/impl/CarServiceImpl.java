@@ -1,10 +1,14 @@
 package org.car.service.impl;
 
+import lombok.RequiredArgsConstructor;
 import org.car.dto.Auth.RegisterDTO;
 import org.car.service.CarService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@RequiredArgsConstructor
+@Service
 public class CarServiceImpl implements CarService {
 
     @Override
