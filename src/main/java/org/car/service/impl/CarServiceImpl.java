@@ -21,6 +21,7 @@ public class CarServiceImpl implements CarService {
     @Override
     public void addCar(CarDTO carDTO) {
         CarEntity carEntity=modelMapper.map(carDTO,CarEntity.class);
+        carRepository.save(carEntity);
     }
 
     @Override
