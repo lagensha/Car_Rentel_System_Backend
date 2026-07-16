@@ -1,15 +1,16 @@
 package org.car.service;
 
 import org.car.dto.Auth.RegisterDTO;
+import org.car.dto.CarDTO;
 
 import java.util.List;
 
 public interface CarService {
-    void addCar(RegisterDTO registerDTO);
-    void updateCar(RegisterDTO registerDTO);
+    void addCar(CarDTO carDTO);
+    void updateCar(CarDTO carDTO);
     void deleteCar(Long id);
     boolean isCarAvailable(Long id);
-    RegisterDTO searchByID(Long id);
-    List<RegisterDTO> getAll();
+    CarDTO searchByID(Long id);
+    List<CarDTO> getAll();
     boolean setStatus(Long id, boolean status);
 }
